@@ -1,0 +1,131 @@
+ body {
+      background: linear-gradient(120deg, #52357B 60%, #5459AC 30%, #B2D8CE 10%);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 40px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-weight: 700;
+      color: #52357B;
+      border-bottom: 2px solid #648DB3;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 1.4rem; /* Smaller than before */
+    }
+    h5 {
+      font-size: 1.1rem; /* Reduced size for second titles */
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .container-section {
+      background: #fff;
+      color: #333;
+      border-radius: 12px;
+      padding: 25px; /* slightly reduced */
+      margin-bottom: 25px;
+      margin-top: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .skill-box {
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      border: 0.5px solid #5459AC;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .skill-badge {
+      display: inline-block;
+      background: #e9ecef;
+      border-radius: 15px;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      margin: 3px;
+    }
+    .experience-list li,
+    .project-list li,
+    .edu-list li,
+    .award-list li {
+      list-style: none;
+      margin-left: 0;
+      margin-bottom: 8px;
+      font-size: 0.95rem; /* Slightly smaller text */
+    }
+    .experience-list li:before {
+      content: "</> ";
+      color: #5459AC;
+      font-weight: bold;
+      font-family: monospace;
+    }
+    .project-list li:before {
+      color: #5459AC;
+      font-size: 16px;
+    }
+    .edu-list li:before {
+      font-family: 'Material Icons';
+      color: #5459AC;
+      background-color: #52357B;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    .award-list li:before {
+      
+      font-size: 18px;
+      color: #5459AC;
+    }
+    footer {
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      border-top: 2px solid #648DB3;
+    }
+    /* Contact Buttons */
+    .contact-btn {
+      margin: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    }
+    .bi-star, .bi-bookmark-star, .bi-trophy{
+      margin-right: 10px;
+    }
+    .responsive-title {
+  font-size: 2.5rem;   /* Desktop size */
+  font-weight: bold;
+}
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .responsive-title {
+    font-size: 2rem;
+    content: "Chit K. San"; /* Doesn't work this way in CSS! */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .responsive-title {
+    font-size: 1.5rem;
+  }
+}

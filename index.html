@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="my-name">Chit Kaung San - Web Developer Portfolio</title>
+
+  <!-- Materialize CSS (Google Material Design) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      background: linear-gradient(120deg, #52357B 60%, #5459AC 30%, #B2D8CE 10%);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 40px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-weight: 700;
+      color: #52357B;
+      border-bottom: 2px solid #648DB3;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 1.4rem; /* Smaller than before */
+    }
+    h5 {
+      font-size: 1.1rem; /* Reduced size for second titles */
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .container-section {
+      background: #fff;
+      color: #333;
+      border-radius: 12px;
+      padding: 25px; /* slightly reduced */
+      margin-bottom: 25px;
+      margin-top: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .skill-box {
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      border: 0.5px solid #5459AC;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .skill-badge {
+      display: inline-block;
+      background: #e9ecef;
+      border-radius: 15px;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      margin: 3px;
+    }
+    .experience-list li,
+    .project-list li,
+    .edu-list li,
+    .award-list li {
+      list-style: none;
+      margin-left: 0;
+      margin-bottom: 8px;
+      font-size: 0.95rem; /* Slightly smaller text */
+    }
+    .experience-list li:before {
+      content: "</> ";
+      color: #5459AC;
+      font-weight: bold;
+      font-family: monospace;
+    }
+    .project-list li:before {
+      color: #5459AC;
+      font-size: 16px;
+    }
+    .edu-list li:before {
+      font-family: 'Material Icons';
+      color: #5459AC;
+      background-color: #52357B;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    .award-list li:before {
+      
+      font-size: 18px;
+      color: #5459AC;
+    }
+    footer {
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      border-top: 2px solid #648DB3;
+    }
+    /* Contact Buttons */
+    .contact-btn {
+      margin: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    }
+    .bi-star, .bi-bookmark-star, .bi-trophy{
+      margin-right: 10px;
+    }
+    .responsive-title {
+  font-size: 2.5rem;   /* Desktop size */
+  font-weight: bold;
+}
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .responsive-title {
+    font-size: 2rem;
+    content: "Chit K. San"; /* Doesn't work this way in CSS! */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .responsive-title {
+    font-size: 1.5rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="responsive-title" data-aos="fade-down">Chit Kaung San</span>
+  <p data-aos="fade-down" data-aos-delay="200">Experienced Web Developer | PHP (Laravel), Vue.js, MySQL</p>
+
+  <!-- Contact Buttons with Materialize Classes -->
+  <div data-aos="fade-up" class="center-align">
+    <a href="tel:+6646350350" class="btn purple lighten-1 contact-btn"><i class="bi bi-telephone-fill"></i> Phone</a>
+    <a href="https://wa.me/66646350350" target="_blank" class="btn green darken-1 contact-btn"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+    <a href="viber://chat?number=%2B6646350350" class="btn deep-purple accent-3 contact-btn"><i class="bi bi-chat-dots-fill"></i> Viber</a>
+  </div>
+
+  <p data-aos="fade-up" data-aos-delay="300">Email: 
+    <a href="mailto:cks.northstar@gmail.com" class="white-text">cks.northstar@gmail.com</a>
+  </p>
+  <p data-aos="fade-up" data-aos-delay="400">Location: Thailand (Willing to work remotely or relocate)</p>
+
+  <div data-aos="zoom-in" data-aos-delay="500">
+    <a href="https://github.com/chitkaungsan/" class="btn black contact-btn" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/chit-kaung-san-945350103" class="btn blue darken-3 contact-btn" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="container-section" data-aos="fade-up">
+    <h2 class="section-title">Professional Summary</h2>
+    <p>Experienced Web Developer with over 5 years of expertise in backend and frontend development using PHP (Laravel), Vue.js, and MySQL. Proven ability to design and build scalable applications, maintain systems, and solve complex problems in production environments. Formerly worked at OPPO Myanmar where supported CRM transitions and managed system operations. Eager to contribute to innovative development teams and take on new technical challenges.</p>
+  </div>
+
+  <div class="container-section" data-aos="fade-up">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box" data-aos="zoom-in"><h5>Languages & Frameworks</h5>
+        <span class="skill-badge">PHP</span><span class="skill-badge">Laravel</span><span class="skill-badge">Vue.js</span>
+        <span class="skill-badge">JavaScript</span><span class="skill-badge">MySQL</span>
+        <span class="skill-badge">Slim</span><span class="skill-badge">Zend</span>
+        <span class="skill-badge">Bootstrap</span><span class="skill-badge">Vuex</span><span class="skill-badge">Pinia</span>
+      </div>
+      <div class="skill-box" data-aos="zoom-in"><h5>Tools</h5>
+        <span class="skill-badge">GitHub</span><span class="skill-badge">VS Code</span>
+        <span class="skill-badge">Sublime Text</span>
+      </div>
+      <div class="skill-box" data-aos="zoom-in"><h5>Platforms</h5>
+        <span class="skill-badge">AWS EC2</span><span class="skill-badge">Lightsail</span>
+        <span class="skill-badge">VPS Hosting</span><span class="skill-badge">Reseller Panel</span>
+      </div>
+      <div class="skill-box" data-aos="zoom-in"><h5>Other Basic Knowledge</h5>
+        <span class="skill-badge">React</span><span class="skill-badge">ElectronJS</span>
+        <span class="skill-badge">Ionic</span><span class="skill-badge">JSON APIs</span><span class="skill-badge">Vuetify</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-section" data-aos="fade-up">
+    <h2 class="section-title">Professional Experience</h2>
+    <h5 class="purple-text text-darken-2">Software Developer – OPPO Myanmar (Mar 2020 – May 2025)</h5>
+    <ul class="experience-list">
+      <li>Developed sales and warehouse report systems using Zend Framework and MySQL</li>
+      <li>Transitioned company-wide CRM system and trained staff</li>
+      <li>Handled bug fixing, troubleshooting accounting and data issues</li>
+    </ul>
+    <h5 class="purple-text text-darken-2">Junior Web Developer – YoonHanThar Co., Ltd. (Mar 2018 – Feb 2020)</h5>
+    <ul class="experience-list">
+      <li>Worked on new web applications and supported existing outsource projects</li>
+      <li>Participated in full development cycles and release stages</li>
+    </ul>
+    <h5 class="purple-text text-darken-2">IT Assistant / Intern – Assist Software IT (Jul 2017 – Feb 2018)</h5>
+    <ul class="experience-list">
+      <li>Assisted with testing, software manuals, performance monitoring</li>
+      <li>Provided client training and handled communication and documentation</li>
+    </ul>
+  </div>
+
+  <div class="container-section" data-aos="fade-up">
+    <h2 class="section-title">Awards & Recognition</h2>
+    <ul class="award-list">
+      <li><i class="bi bi-trophy"></i><strong>Employee of the Year 2023</strong> – OPPO Myanmar | Outstanding backend development and handled lead system and CRM system</li>
+    </ul>
+  </div>
+
+  <div class="container-section" data-aos="fade-up">
+    <h2 class="section-title">Project Experience</h2>
+    <h5 class="purple-text">Freelance Projects</h5>
+    <ul class="project-list">
+      <li> <i class="bi bi-star purple-text text-darken-2"></i> M4U Movies Store (Web + Mobile)</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>BigBoyBro (Adult Website)</li>
+    </ul>
+    <h5 class="purple-text">Company Projects</h5>
+    <ul class="project-list">
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>Apex Payment Member System (Admin + API)</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>Infosys Myanmar e-filling Station Software</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>Myanmar Mandalay Real Estate (Web + Mobile)</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>Astro Garden (Web + Mobile)</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>UZO-YGN iDirectory Mobile App (API)</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>SurpriseMe (Web + Mobile)</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>Dlight Delivery Tracking (Web + Mobile)</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>Intime Delivery Service (Web + Mobile)</li>
+      <li><i class="bi bi-star purple-text text-darken-2"> </i>Online Event Tickets (Web)</li>
+    </ul>
+  </div>
+
+  <div class="container-section" data-aos="fade-up">
+    <h2 class="section-title">Education & Certifications</h2>
+    <ul class="edu-list">
+      <li><i class="bi bi-bookmark-star purple-text text-darken-2"> </i> Diploma in Computing Level 5 – Greenwich University (MCC.i Yangon)</li>
+      <li><i class="bi bi-bookmark-star purple-text text-darken-2"> </i> Software Solution with Java – Gusto Institute (Yangon)</li>
+      <li><i class="bi bi-bookmark-star purple-text text-darken-2"> </i>Web Developer with PHP – ACE Inspiration (Yangon)</li>
+      <li><i class="bi bi-bookmark-star purple-text text-darken-2"> </i>Hardware A+ – KMD Computer Center</li>
+      <li><i class="bi bi-bookmark-star purple-text text-darken-2"> </i>Graphic Design & Multimedia – KMD Computer Center</li>
+      <li><i class="bi bi-bookmark-star purple-text text-darken-2"> </i>General English – Success Academy Language School</li>
+    </ul>
+  </div>
+
+  <div class="container-section" data-aos="fade-up">
+    <h2 class="section-title">Statement</h2>
+    <p>I am passionate about building reliable, secure, and scalable web applications. I am eager to join a new team where I can grow professionally and deliver meaningful technical solutions. Thank you for your time to look through my portfolio.</p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Chit Kaung San | Designed with Material Design & AOS</p>
+</footer>
+
+<!-- Materialize & AOS Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
+  
