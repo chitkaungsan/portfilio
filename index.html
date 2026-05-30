@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chit Kaung San - Full Stack Developer</title>
-
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -13,17 +12,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
     />
-
     <style>
       :root {
-        /* Enterprise Color Palette - Trust & Stability */
-        --primary: #0f172a; /* Deep Navy (Background) */
-        --secondary: #1e293b; /* Slate (Cards) */
-        --accent: #3b82f6; /* Corporate Blue (Actions) */
-        --text-main: #f1f5f9; /* Off-white text */
-        --text-muted: #94a3b8; /* Muted text for secondary info */
-        --border: #334155; /* Subtle borders */
-        --success: #10b981; /* Success Green for "Active" status */
+        --primary: #0f172a;
+        --secondary: #1e293b;
+        --accent: #3b82f6;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --border: #334155;
+        --success: #10b981;
       }
 
       * {
@@ -45,21 +42,20 @@
         color: inherit;
         transition: 0.2s;
       }
+
       ul {
         list-style: none;
       }
 
-      /* --- Layout Grid (The "Modern CV" Layout) --- */
       .page-wrapper {
         max-width: 1200px;
         margin: 0 auto;
         padding: 40px 20px;
         display: grid;
-        grid-template-columns: 320px 1fr; /* Left Sidebar | Main Content */
+        grid-template-columns: 320px 1fr;
         gap: 40px;
       }
 
-      /* --- Sidebar (Quick Scan Info) --- */
       aside {
         position: relative;
       }
@@ -69,7 +65,7 @@
         border: 1px solid var(--border);
         border-radius: 8px;
         padding: 30px 25px;
-        position: sticky; /* Keeps profile visible while scrolling */
+        position: sticky;
         top: 40px;
       }
 
@@ -134,10 +130,10 @@
         margin-bottom: 15px;
       }
 
-      /* Skills Tags */
       .skill-group {
         margin-bottom: 20px;
       }
+
       .skill-label {
         font-size: 0.9rem;
         font-weight: 600;
@@ -145,11 +141,13 @@
         display: block;
         color: #e2e8f0;
       }
+
       .tag-cloud {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
       }
+
       .tag {
         background: rgba(255, 255, 255, 0.05);
         padding: 4px 10px;
@@ -158,27 +156,28 @@
         color: #cbd5e1;
         border: 1px solid transparent;
       }
+
       .tag.core {
         border-color: var(--accent);
         color: white;
         background: rgba(59, 130, 246, 0.1);
       }
 
-      /* Education List */
       .edu-item {
         margin-bottom: 15px;
       }
+
       .edu-degree {
         display: block;
         font-weight: 600;
         color: #f1f5f9;
       }
+
       .edu-school {
         font-size: 0.85rem;
         color: var(--text-muted);
       }
 
-      /* --- Main Content (Deep Dive) --- */
       main section {
         margin-bottom: 60px;
       }
@@ -203,14 +202,12 @@
         color: var(--accent);
       }
 
-      /* Summary */
       .summary-text {
         font-size: 1.05rem;
         color: #cbd5e1;
         max-width: 800px;
       }
 
-      /* Experience Cards */
       .job-card {
         display: grid;
         grid-template-columns: 180px 1fr;
@@ -221,6 +218,7 @@
       .job-meta {
         text-align: left;
       }
+
       .job-dates {
         font-size: 0.9rem;
         color: var(--text-muted);
@@ -228,6 +226,7 @@
         margin-bottom: 5px;
         display: block;
       }
+
       .job-duration {
         font-size: 0.8rem;
         color: #64748b;
@@ -238,6 +237,7 @@
         margin-bottom: 5px;
         color: #fff;
       }
+
       .job-company {
         color: var(--accent);
         font-weight: 500;
@@ -252,6 +252,7 @@
         color: #cbd5e1;
         font-size: 0.95rem;
       }
+
       .job-achievements li::before {
         content: "•";
         color: var(--accent);
@@ -271,7 +272,6 @@
         align-items: center;
       }
 
-      /* Project Grid */
       .project-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -301,6 +301,7 @@
         font-weight: 700;
         color: #fff;
       }
+
       .project-type {
         font-size: 0.75rem;
         text-transform: uppercase;
@@ -323,7 +324,6 @@
         font-family: monospace;
       }
 
-      /* Responsive */
       @media (max-width: 900px) {
         .page-wrapper {
           grid-template-columns: 1fr;
@@ -348,7 +348,7 @@
         <div class="profile-card">
           <div class="profile-header">
             <h1>Chit Kaung San</h1>
-            <span class="profile-role">Laravel, Vue Full Stack Developer</span>
+            <span class="profile-role">Full Stack Web Developer <br/><span style="font-size: 15px;color: whitesmoke;">Laravel | Vue | React | TypeScript</span> </span>
           </div>
 
           <div class="status-indicator">
@@ -365,7 +365,7 @@
             </li>
             <li>
               <i class="bi bi-whatsapp"></i>
-              <a href="https://wa.me/66646350350">+66 4 635 0350</a>
+              <a href="https://wa.me/66946350350">+66 94 635 0350</a>
             </li>
             <li>
               <i class="bi bi-geo-alt"></i>
@@ -373,7 +373,7 @@
             </li>
             <li>
               <i class="bi bi-github"></i>
-              <a href="https://github.com/chitkaungsan/" target="_blank"
+              <a href="https://github.com/chitkaungsan" target="_blank"
                 >github.com/chitkaungsan</a
               >
             </li>
@@ -389,7 +389,7 @@
 
           <div style="margin-top: 25px">
             <a
-              href="https://drive.google.com/file/d/1Wvu0I8BZ1l8x1rkH9r_z6NkUyo3L2lul/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1SIvTnU6KRb-wIaSGRYZKCKuy1Ro9sXgR/view?usp=sharing"
               class="download-btn"
               target="_blank"
               rel="noopener noreferrer"
@@ -412,51 +412,79 @@
             <h4 class="sidebar-title">Technical Expertise</h4>
 
             <div class="skill-group">
-              <span class="skill-label">Core Backend</span>
+              <span class="skill-label">Backend</span>
               <div class="tag-cloud">
-                <span class="tag core">PHP 8</span>
+                <span class="tag core">PHP</span>
                 <span class="tag core">Laravel</span>
                 <span class="tag core">MySQL</span>
-                <span class="tag">REST API</span>
-                <span class="tag">Auth API</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Zend Framework</span>
+                <span class="tag">JSON API</span>
               </div>
             </div>
 
             <div class="skill-group">
-              <span class="skill-label">Frontend & UI</span>
+              <span class="skill-label">Frontend</span>
               <div class="tag-cloud">
-                <span class="tag core">Vue.js 3</span>
-                <span class="tag">Pinia</span>
-                <span class="tag">Vuetify</span>
+                <span class="tag core">Vue.js</span>
+                <span class="tag core">React</span>
+                <span class="tag core">TypeScript</span>
+                <span class="tag">Vuex & Pinia</span>
+                <span class="tag">Zustand</span>
+                <span class="tag">JavaScript</span>
                 <span class="tag">Bootstrap</span>
               </div>
             </div>
 
             <div class="skill-group">
-              <span class="skill-label">DevOps & Automation</span>
+              <span class="skill-label">DevOps & Tools</span>
               <div class="tag-cloud">
                 <span class="tag">Docker</span>
                 <span class="tag">CI/CD</span>
-                <span class="tag">AWS EC2</span>
+                <span class="tag">AWS (EC2)</span>
+                <span class="tag">VPS</span>
+                <span class="tag">GitHub</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="skill-label">AI & Other Knowledge</span>
+              <div class="tag-cloud">
+                <span class="tag">Kilo Code</span>
+                <span class="tag">Copilot</span>
+                <span class="tag">ChatGPT</span>
+                <span class="tag">Gemini</span>
+                <span class="tag">ElectronJS</span>
+                <span class="tag">Ionic</span>
                 <span class="tag">N8N</span>
-                <span class="tag">Git</span>
               </div>
             </div>
           </div>
 
           <div class="sidebar-section">
-            <h4 class="sidebar-title">Education</h4>
+            <h4 class="sidebar-title">Education & Certifications</h4>
             <div class="edu-item">
-              <span class="edu-degree">Diploma in Computing (L5)</span>
-              <span class="edu-school">Greenwich University (MCC.i)</span>
+              <span class="edu-degree">Diploma in Computing Level 5</span>
+              <span class="edu-school">Greenwich University (MCC.i Yangon)</span>
             </div>
             <div class="edu-item">
-              <span class="edu-degree">Professional Certifications</span>
-              <span class="edu-school">Web Dev (ACE Inspiration)</span><br />
-              <span class="edu-school">Java (Gusto Institute)</span>
+              <span class="edu-degree">Software Solution with Java</span>
+              <span class="edu-school">Gusto Institute (Yangon)</span>
+            </div>
+            <div class="edu-item">
+              <span class="edu-degree">Web Developer with PHP</span>
+              <span class="edu-school">ACE Inspiration (Yangon)</span>
+            </div>
+            <div class="edu-item">
+              <span class="edu-degree">Hardware A+ & Graphic Design</span>
+              <span class="edu-school">KMD Computer Center</span>
+            </div>
+            <div class="edu-item">
+              <span class="edu-degree">General English</span>
+              <span class="edu-school">Success Academy Language School</span>
             </div>
           </div>
-                    <div class="sidebar-section">
+                              <div class="sidebar-section">
             <h4 class="sidebar-title">Language</h4>
             <div class="edu-item">
               <span class="edu-degree">Burmese (Native)</span>
@@ -475,15 +503,7 @@
             <h2>Professional Summary</h2>
           </div>
           <p class="summary-text">
-           Experienced Full Stack Web Developer with over 5 years of production
-experience in backend and frontend development using PHP (Laravel),
-Vue.js, and MySQL. Proven ability to design and build scalable
-applications, maintain and modernize legacy systems, and solve complex
-problems in live production environments. Previously supported CRM
-system transitions and system operations at OPPO Myanmar. Open to
-remote or on-site roles and eager to contribute to innovative
-development teams while taking on new technical challenges.
-
+            Full-Stack Web Developer with 6+ years of professional experience delivering scalable web applications and enterprise solutions using PHP (Laravel, Zend Framework), Vue.js, React, JavaScript, and MySQL. Skilled in RESTful API development, third-party system integration, legacy application enhancement, and CRM migration projects. Proven track record of building and maintaining business-critical systems that support sales operations, inventory management, user access control, and reporting. Passionate about clean architecture, continuous learning, and developing reliable software that creates measurable business value.
           </p>
         </section>
 
@@ -495,28 +515,15 @@ development teams while taking on new technical challenges.
 
           <div class="job-card">
             <div class="job-meta">
-              <span class="job-dates">Jul 2025 – Nov 2025</span>
-              <span class="job-duration">Koh Samui, Thailand</span>
+              <span class="job-dates">Jul 2025 – Feb 2026</span>
+              <span class="job-duration">Koh Samui, Surat Thani</span>
             </div>
             <div class="job-content">
               <h3>Web Developer</h3>
-              <span class="job-company">Mr. Property Siam</span>
+              <span class="job-company">Mr., Property Siam</span>
               <ul class="job-achievements">
-                <li>
-                  <strong>System Maintenance:</strong> Ensure uptime for
-                  property management software serving critical real estate
-                  data.
-                </li>
-                <li>
-                  <strong>New Product Development:</strong> Spearheading the
-                  full-stack architecture of "BikeBnB," a rental platform using
-                  Laravel and Vue 3.
-                </li>
-                <li>
-                  <strong>Automation:</strong> Integrating N8N workflows to
-                  automate tenant communication and administrative reporting,
-                  reducing manual workload by 30%.
-                </li>
+                <li>Supported and enhanced property management software. Developed a motorcycle rental module and implemented workflow automation with n8n.</li>
+                <li>Worked with the Hostaway API to synchronize data, process background jobs, and handle real-time notifications.</li>
               </ul>
             </div>
           </div>
@@ -524,7 +531,7 @@ development teams while taking on new technical challenges.
           <div class="job-card">
             <div class="job-meta">
               <span class="job-dates">Mar 2020 – May 2025</span>
-              <span class="job-duration">5 Years 3 Months</span>
+              <span class="job-duration">Yangon</span>
             </div>
             <div class="job-content">
               <h3>Software Developer</h3>
@@ -536,21 +543,12 @@ development teams while taking on new technical challenges.
               </div>
 
               <ul class="job-achievements">
-                <li>
-                  <strong>Enterprise CRM Transition:</strong> Led the technical
-                  migration of the company-wide CRM, conducting training for 50+
-                  internal staff members.
-                </li>
-                <li>
-                  <strong>Reporting Engine:</strong> Developed complex sales and
-                  warehouse reporting modules using Zend Framework and MySQL,
-                  optimizing queries for large datasets.
-                </li>
-                <li>
-                  <strong>Data Integrity:</strong> Diagnosed and resolved
-                  critical accounting data discrepancies, ensuring financial
-                  accuracy for stakeholders.
-                </li>
+                <li>Maintained and customized enterprise systems including Leaf CRM, WMS, HRMS, PMS, Sales, and Warehouse Management systems.</li>
+                <li>Developed and supported legacy applications using Zend Framework, Laravel, PHP, and MySQL.</li>
+                <li>Managed DingTalk workflows, approvals, and administrative configurations.</li>
+                <li>Built and enhanced Sales, Warehouse, and Permission Management modules.</li>
+                <li>Collaborated with non-technical users and management teams to gather requirements, provide system training and support, and create documentation that improved user adoption and operational efficiency.</li>
+                <li>Participated in system improvements, troubleshooting, and business process optimization.</li>
               </ul>
             </div>
           </div>
@@ -558,44 +556,30 @@ development teams while taking on new technical challenges.
           <div class="job-card">
             <div class="job-meta">
               <span class="job-dates">Mar 2018 – Feb 2020</span>
-              <span class="job-duration">2 Years</span>
+              <span class="job-duration">Yangon</span>
             </div>
             <div class="job-content">
               <h3>Junior Web Developer</h3>
-              <span class="job-company">YoonHanThar Co., Ltd.</span>
+              <span class="job-company">Yoon Han Thar Private Co., Ltd.</span>
               <ul class="job-achievements">
-                <li>
-                  <strong>Full Cycle Development:</strong> Participated in the
-                  complete SDLC for varied client web applications.
-                </li>
-                <li>
-                  <strong>Legacy Support:</strong> Maintained and patched
-                  existing outsourced projects, improving security and
-                  stability.
-                </li>
+                <li>Developed and maintained web applications for various client projects.</li>
+                <li>Took part in development, testing, deployment, and system support activities.</li>
+                <li>Worked directly with clients to understand requirements and support system development.</li>
               </ul>
             </div>
           </div>
+          
           <div class="job-card">
             <div class="job-meta">
               <span class="job-dates">Jul 2017 – Feb 2018</span>
-              <span class="job-duration">8 Months</span>
+              <span class="job-duration">Yangon</span>
             </div>
             <div class="job-content">
-              <h3>Intern Web Developer</h3>
-              <span class="job-company"
-                >EMC Manufacturing Co., Ltd. (Yangon)</span
-              >
+              <h3>IT Assistant / Intern</h3>
+              <span class="job-company">EMC Manufacturing</span>
               <ul class="job-achievements">
-                <li>
-                  <strong>Testing & QA Support:</strong> Assisted in application
-                  testing, performance monitoring, and issue verification.
-                </li>
-                <li>
-                  <strong>Documentation & Training:</strong> Prepared software
-                  manuals, conducted basic client training, and handled
-                  technical documentation and client communication.
-                </li>
+                <li>Assisted with testing, software manuals, performance monitoring.</li>
+                <li>Provided client training and handled communication and documentation.</li>
               </ul>
             </div>
           </div>
@@ -604,110 +588,129 @@ development teams while taking on new technical challenges.
         <section>
           <div class="section-header">
             <i class="bi bi-code-square section-icon"></i>
-            <h2>Technical Projects</h2>
+            <h2>Project Experience</h2>
           </div>
 
           <div class="project-grid">
             <div class="project-card">
               <div class="project-head">
-                <span class="project-title">BikeBnB Rental</span>
-                <span class="project-type">Web App</span>
-              </div>
-              <p class="project-desc">
-                A comprehensive rental management platform allowing streamlined
-                booking and inventory tracking for vehicle rentals.
-              </p>
-              <div class="tech-stack">Laravel • Vue.js • MySQL</div>
-            </div>
-
-            <div class="project-card">
-              <div class="project-head">
                 <span class="project-title">M4U Movies Store</span>
-                <span class="project-type">Web/Mobile</span>
+                <span class="project-type">Freelance</span>
               </div>
               <p class="project-desc">
-                A media streaming and browsing interface built for
-                high-performance content delivery on mobile and desktop.
+                Movies store platform featuring an administrative dashboard and user-facing frontend.
               </p>
-              <div class="tech-stack">PHP • Mobile Responsive</div>
+              <div class="tech-stack">Laravel • Admin Dashboard • Frontend</div>
             </div>
 
             <div class="project-card">
               <div class="project-head">
-                <span class="project-title">Apex Member System</span>
-                <span class="project-type">Admin + API</span>
+                <span class="project-title">Bike Rental</span>
+                <span class="project-type">Freelance</span>
               </div>
               <p class="project-desc">
-                Backend administration panel integrated with payment gateway
-                APIs for member subscription management.
+                Interactive motorcycle rental application featuring live updates and state management.
               </p>
-              <div class="tech-stack">API Integration • Security</div>
+              <div class="tech-stack">Laravel • Vue • Vuex • Pusher</div>
             </div>
 
             <div class="project-card">
               <div class="project-head">
-                <span class="project-title">Infosys e-Filling</span>
-                <span class="project-type">IoT/Station</span>
+                <span class="project-title">Apex Payment Member System</span>
+                <span class="project-type">Company Project</span>
               </div>
               <p class="project-desc">
-                Specialized software for fuel stations to track inventory levels
-                and filling data in real-time.
+                Backend administration panel and API to manage user memberships and payment gateways.
               </p>
-              <div class="tech-stack">Real-time Data • Reporting</div>
+              <div class="tech-stack">Laravel • Admin Dashboard • JSON API</div>
             </div>
 
             <div class="project-card">
               <div class="project-head">
-                <span class="project-title">Dlight Delivery</span>
-                <span class="project-type">Logistics</span>
+                <span class="project-title">Infosys Myanmar e-filling</span>
+                <span class="project-type">Company Project</span>
               </div>
               <p class="project-desc">
-                Tracking solution for logistics operations, enabling status
-                updates and package route monitoring.
+                Specialized station software to track inventory levels and filling data with administrative controls.
               </p>
-              <div class="tech-stack">Geolocation • Database Optimization</div>
+              <div class="tech-stack">MSSQL • Laravel • Admin Dashboard</div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-head">
+                <span class="project-title">Myanmar Mandalay Real Estate</span>
+                <span class="project-type">Company Project</span>
+              </div>
+              <p class="project-desc">
+                Real estate property management platform to handle properties, tenants, and operational status.
+              </p>
+              <div class="tech-stack">Laravel • Vue • Vuex • JSON API</div>
             </div>
 
+            <div class="project-card">
+              <div class="project-head">
+                <span class="project-title">Astro Garden</span>
+                <span class="project-type">Company Project</span>
+              </div>
+              <p class="project-desc">
+                Application leveraging cloud storage for scalable image and file management.
+              </p>
+              <div class="tech-stack">Laravel • JSON API • S3 Storage</div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
+                <span class="project-title">UZO-YGN iDirectory</span>
+                <span class="project-type">Company Project</span>
+              </div>
+              <p class="project-desc">
+                Backend directory service powering a mobile application via JSON API endpoints.
+              </p>
+              <div class="tech-stack">Laravel • JSON API • Mobile App Backend</div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-head">
+                <span class="project-title">SurpriseMe</span>
+                <span class="project-type">Company Project</span>
+              </div>
+              <p class="project-desc">
+                A custom QR Code generation utility tool developed strictly with core PHP functionality.
+              </p>
+              <div class="tech-stack">Pure PHP • QR Code Generator</div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
+                <span class="project-title">Dlight Delivery Tracking</span>
+                <span class="project-type">Company Project</span>
+              </div>
+              <p class="project-desc">
+                Tracking solution for logistics operations, enabling live status updates and monitoring.
+              </p>
+              <div class="tech-stack">Laravel • Pusher • Google Map • JSON API</div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
+                <span class="project-title">Intime Delivery Service</span>
+                <span class="project-type">Company Project</span>
+              </div>
+              <p class="project-desc">
+                End-to-end logistics tracking system featuring route monitoring and real-time package status.
+              </p>
+              <div class="tech-stack">Laravel • Pusher • Google Map • JSON API</div>
+            </div>
+            
             <div class="project-card">
               <div class="project-head">
                 <span class="project-title">Online Event Tickets</span>
-                <span class="project-type">E-Commerce</span>
+                <span class="project-type">Internship Project</span>
               </div>
               <p class="project-desc">
-                Booking system for events, handling seat reservations and
-                digital ticket generation.
+                Digital ticketing and booking system for managing event access and reservations.
               </p>
-              <div class="tech-stack">Booking Logic </div>
-            </div>
-            <div class="project-card">
-              <div class="project-head">
-                <span class="project-title">Intime Delivery</span>
-                <span class="project-type">Logistics</span>
-              </div>
-              <p class="project-desc">
-                End-to-end logistics and warehouse tracking system with
-                real-time package status, route monitoring, and inventory flow
-                management.
-              </p>
-              <div class="tech-stack">
-                Warehouse Systems • Tracking Engine • Geolocation • Database
-                Optimization
-              </div>
-            </div>
-
-            <div class="project-card">
-              <div class="project-head">
-                <span class="project-title">Myanmar Mandalay Real Estate </span>
-                <span class="project-type">Property Management</span>
-              </div>
-              <p class="project-desc">
-                Real estate property management platform for Mandalay, built for
-                web and mobile to manage properties, tenants, and operational
-                status.
-              </p>
-              <div class="tech-stack">
-                Property Management • Web & Mobile • Real Estate
-              </div>
+              <div class="tech-stack">Laravel</div>
             </div>
           </div>
         </section>
